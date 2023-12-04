@@ -1,0 +1,92 @@
+/* Mobile First */
+html {
+  font: size 62.5%;
+}
+
+body {
+  margin: 0.5rem;
+  background-color: #02898b;
+}
+
+.header {
+  background-color: #fed602;
+  padding: 0.5rem;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+}
+.parent > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  order: 1;
+}
+.fa-brands fa-square-x-twitter {
+  display: block;
+}
+.a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main {
+  background-color: #fe8b00;
+  padding: 0.5rem;
+}
+.eka {
+  background-color: #3bb371;
+  padding: 0.5rem;
+}
+.toka {
+  background-color: #2c8b57;
+  padding: 0.5rem;
+}
+.footer {
+  background-color: #90ed8f;
+  padding: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+/* Tablet */
+@media only screen and (min-width: 426px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .eka {
+    flex-basis: auto;
+  }
+  .toka {
+    flex-basis: auto;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  .eka {
+    order: 1;
+    flex-basis: 0px;
+  }
+  .main {
+    order: 2;
+    flex-basis: 400px;
+  }
+  .toka {
+    order: 3;
+    flex-basis: 0px;
+  }
+  .footer {
+    order: 4;
+  }
+}
