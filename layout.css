@@ -1,11 +1,21 @@
 /* Mobile First */
 html {
-  font: size 62.5%;
+  font-size: 62.5%;
 }
 
 body {
   margin: 0.5rem;
   background-color: #02898b;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 .header {
@@ -23,15 +33,31 @@ body {
   flex-basis: 0;
   order: 1;
 }
-.fa-brands fa-square-x-twitter {
-  display: block;
-}
-.a {
+
+.tagit {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  padding: 0;
 }
-
+.tagit * {
+  flex-grow: 1;
+  flex-basis: 0;
+  order: 0;
+  padding: 0.25rem;
+  text-align: center;
+}
+.a {
+  color: white;
+  background-color: #56acee;
+}
+.b {
+  color: white;
+  background-color: #3a5998;
+}
+.c {
+  color: white;
+  background-color: #777777;
+}
 .main {
   background-color: #fe8b00;
   padding: 0.5rem;
@@ -49,16 +75,6 @@ body {
   padding: 0.5rem;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.wrapper > * {
-  padding: 10px;
-  flex-grow: 1;
-  flex-basis: 100%;
-}
 /* Tablet */
 @media only screen and (min-width: 426px) {
   .wrapper {
