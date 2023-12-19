@@ -13,7 +13,6 @@ body {
   flex-wrap: wrap;
 }
 .wrapper > * {
-  padding: 10px;
   flex-grow: 1;
   flex-basis: 100%;
 }
@@ -26,7 +25,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: aliceblue;
 }
 .parent > * {
   flex-grow: 1;
@@ -73,6 +71,18 @@ body {
 .footer {
   background-color: #90ed8f;
   padding: 0.5rem;
+}
+.yksi,
+.kaksi,
+.kolme,
+.neljä,
+.viisi,
+.kuusi {
+  border: solid 1px rgb(89, 89, 89);
+  background-color: #ffffff;
+  color: #111111;
+  padding: 0.7 rem;
+  text-align: center;
 }
 
 /* Tablet */
